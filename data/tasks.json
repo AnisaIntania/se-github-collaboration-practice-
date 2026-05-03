@@ -1,0 +1,34 @@
+[
+ {
+ "id": 1,
+ "title": "Membuat requirement aplikasi",
+ "description": "Menyusun kebutuhan fungsional dan non-fungsional",
+ "status": "todo",
+ "priority": "high",
+ "assignee": "Rina"
+ },
+ {
+ "id": 2,
+ "title": "Membuat desain UI",
+ "description": "Membuat wireframe halaman utama",
+ "status": "in_progress",
+ "priority": "medium",
+ "assignee": "Budi"
+ },
+ {
+ "id": 3,
+ "title": "Implementasi fitur login",
+ "description": "Membuat validasi username dan password",
+ "status": "todo",
+ "priority": "high",
+ "assignee": "Sari"
+ },
+ {
+ "id": 4,
+ "title": "Testing fitur dashboard",
+ "description": "Melakukan pengujian fitur utama aplikasi",
+ "status": "done",
+ "priority": "low",
+ "assignee": "Dika"
+ }
+]
