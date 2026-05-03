@@ -22,7 +22,13 @@ def add_task():
 
     title = input("Judul task: ")
     description = input("Deskripsi: ")
-    priority = input("Priority (low/medium/high): ")
+
+    #Validasi input priority (modiefied by anisa)
+    priority = input("Priority (low/medium/high): ").lower()
+    if priority not in ["low", "medium", "high"]:
+        print("Priority tidak valid! Gunakan: low, medium, atau high.")
+        return
+
     assignee = input("Assignee: ")
 
     new_task = {
