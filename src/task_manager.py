@@ -25,6 +25,11 @@ def add_task():
 
     #Validasi input priority (modiefied by anisa)
     priority = input("Priority (low/medium/high): ").lower()
+    #Validasi kosong
+    if priority == "":
+        print("Priority tidak boleh kosong!")
+        return
+    #Validasi input yg benar
     if priority not in ["low", "medium", "high"]:
         print("Priority tidak valid! Gunakan: low, medium, atau high.")
         return
