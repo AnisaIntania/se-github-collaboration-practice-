@@ -24,3 +24,5 @@ Setiap Pull Request wajib berisi:
 3. Cara testing.
 4. Screenshot atau contoh output jika ada.
 5. Minimal 1 komentar review dari anggota tim.
+
+Kontribusi oleh Teesa Shahnaz, Anisa Intania, Bakhtiar

@@ -41,7 +41,14 @@ def add_task():
 def update_status():
     tasks = load_tasks()
     task_id = int(input("Masukkan ID task: "))
+
     new_status = input("Status baru (todo/in_progress/done): ")
+
+    valid_status = ["todo", "in_progress", "done"]
+
+    if new_status not in valid_status:
+        print("Status tidak valid.")
+        return
 
     for task in tasks:
         if task["id"] == task_id:
