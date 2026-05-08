@@ -30,3 +30,6 @@ engineering.
 7. Lakukan review pada PR teman.
 8. Perbaiki kode jika ada komentar.
 9. Merge setelah disetujui.
+
+
+Kontribusi oleh Teesa Shahnaz, Anisa Intania, Bakhtiar

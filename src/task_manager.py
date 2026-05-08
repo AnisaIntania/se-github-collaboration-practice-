@@ -1,5 +1,7 @@
 import json
 
+from matplotlib.pyplot import title
+
 DATA_FILE = "data/tasks.json"
 
 def load_tasks():
@@ -25,6 +27,10 @@ def add_task():
     priority = input("Priority (low/medium/high): ")
     assignee = input("Assignee: ")
 
+    if title == "" or assignee == "":
+        print("Judul dan assignee tidak boleh kosong.")
+        return
+    
     new_task = {
         "id": new_id,
         "title": title,
