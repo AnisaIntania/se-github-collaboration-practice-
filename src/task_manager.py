@@ -40,17 +40,20 @@ def add_task():
 
 def update_status():
     tasks = load_tasks()
-    task_id = int(input("Masukkan ID task: "))
+
+    try:
+        task_id = int(input("Masukkan ID task: "))
+    except ValueError:
+        print("ID harus berupa angka.")
+        return
+
     new_status = input("Status baru (todo/in_progress/done): ")
 
-    for task in tasks:
-        if task["id"] == task_id:
-            task["status"] = new_status
-            save_tasks(tasks)
-            print("Status berhasil diubah.")
-            return
+    valid_status = ["todo", "in_progress", "done"]
 
-    print("Task tidak ditemukan.")
+    if new_status not in valid_status:
+        print("Status tidak valid.")
+        return
 
 def delete_task():
     tasks = load_tasks()
